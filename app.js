@@ -22,8 +22,8 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-
-app.use(require('./routers/apiRouters'))
+// v1 specfic code
+app.use(require('./v1/routers/apiRouters'))
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express API Server Listening on port ' + app.get('port'));
