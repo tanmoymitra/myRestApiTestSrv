@@ -18,6 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "cluster": "^0.7.7",
+    "compression": "^1.7.0",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.3",
     "countryjs": "^1.8.0",
@@ -30,6 +32,7 @@
     "mongodb": "^2.2.29",
     "morgan": "^1.8.2",
     "node-where": "^1.1.0",
+    "os": "^0.1.1",
     "path": "^0.12.7",
     "request-ip": "^2.0.2",
     "util": "^0.10.3"
