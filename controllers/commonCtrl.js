@@ -8,5 +8,14 @@ exports.all = function(req, res){
 
 exports.geolocation = function(req, res){
     var clientIp = requestIp.getClientIp(req);
-    res.send({"IP":clientIp});
+    where.is(clientIp, function(err, result) {
+        if (err) { throw err; }
+        req.geoip = ip;
+        req.geoLoc = result.attributes;
+        var data = {
+            ip: clientIp,
+            geo:result.attributes
+        };
+        res.send(JSON.stringify(data));
+    });
 };
