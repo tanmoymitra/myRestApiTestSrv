@@ -1,0 +1,32 @@
+{
+  "name": "my-rest-api-test-server",
+  "version": "1.0.0",
+  "description": "Simple Rest API Server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanmoymitra/myRestApiTestSrv"
+  },
+  "bugs": {
+    "url": "https://github.com/tanmoymitra/myRestApiTestSrv/issues"
+  },
+  "homepage": "https://github.com/tanmoymitra/myRestApiTestSrv#readme",
+  "author": "Tanmoy Mitra <tanmoymitra@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "helmet": "^3.6.1",
+    "jsonwebtoken": "^7.4.1",
+    "mongodb": "^2.2.29",
+    "morgan": "^1.8.2",
+    "path": "^0.12.7",
+    "util": "^0.10.3"
+  }
+}
