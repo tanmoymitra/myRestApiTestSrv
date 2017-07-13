@@ -24,6 +24,7 @@ app.use(function(req, res, next) {
 });
 // v1 specfic code
 app.use(require('./v1/routers/apiRouters'))
+app.use(require('./v1/middlewares/commonResponse').setResponseHeader)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express API Server Listening on port ' + app.get('port'));
