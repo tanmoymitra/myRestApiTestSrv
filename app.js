@@ -8,7 +8,6 @@ var helmet = require('helmet')
 var cors = require('cors')
 var compression = require('compression')
 var cluster = require('cluster')
-var cache = require('apicache').middleware
 
 
 if (cluster.isMaster) {
@@ -23,7 +22,6 @@ if (cluster.isMaster) {
 } else {
     var app = express()
     app.set('port', process.env.PORT || 3000)
-    app.use(cache('5 minutes'))
     app.use(compression())
     app.use(helmet())
     app.use(cors());
