@@ -17,6 +17,7 @@
   "author": "Tanmoy Mitra <tanmoymitra@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "apiai": "^4.0.3",
     "apicache": "^0.8.7",
     "body-parser": "^1.17.2",
     "cluster": "^0.7.7",
