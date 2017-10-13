@@ -77,7 +77,7 @@ function sendTextMessage(recipientId, messageText) {
     });
 
     apiai.on('error', (error) => {
-        //console.log(error);
+        console.log(error);
     });
 
     apiai.end();
