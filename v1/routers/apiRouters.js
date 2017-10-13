@@ -6,6 +6,6 @@ router.get('/', require('../controllers/commonCtrl').all)
 router.get('/api/v1/geolocation', require('../controllers/commonCtrl').geolocation)
 router.get('/api/v1/webhook', require('../controllers/facebookChatBotCtrl').validate)
 router.post('/api/v1/webhook', require('../controllers/facebookChatBotCtrl').sendMessage)
-router.post('/api/v1/skypechat', require('../controllers/skypeChatBotCtrl'.all))
+router.get('/api/v1/skypechat', require('../controllers/skypeChatBotCtrl').all)
 
 module.exports = router
